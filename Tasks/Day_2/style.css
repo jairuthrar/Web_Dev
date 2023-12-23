@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+.outerbox{
+    display:flex ;
+    flex-direction: row;
+    height: fit-content;
+    width: 53%;
+    padding: 10% 25%;
+   
+    
+}
+
+ .box1,.box2,.box3,img,p,h1,button{
+    padding:15px; 
+   
+} 
+
+
+p{
+
+font-family: 'Lexend Deca', sans-serif;
+font-weight: 400;
+font-size: 15px;
+gap:5px;
+color: hsl(0, 0%, 100%, 0.75);
+line-height: 1.5em;
+margin-bottom: 40px;
+
+}
+
+h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.box1{
+    background-color:  hsl(31, 77%, 52%);
+    border-radius: 15px 0px 0px 15px;
+}
+.box2{
+    background-color:  hsl(184, 100%, 22%);
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 15px 15px 0px;
+}
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+.btn2{
+    color:  hsl(184, 100%, 22%);
+  
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: none;
+    padding: 7px 20px 7px 20px;
+    border-radius:30px;
+    margin-left: 10px ;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+}
+
+
+
+
+.btn3:hover{
+    background-color:  hsl(179, 100%, 13%);;
+    cursor: pointer;
+    outline: 2px solid white;
+    color: white;
+ 
+}
+
+.btn2:hover{
+    background-color:   hsl(184, 100%, 22%);
+    cursor: pointer;
+    outline: 2px solid white;
+    color: white;
+}
+
+.btn1:hover{
+    background-color: hsl(31, 77%, 52%) ;
+    cursor: pointer;
+    outline: 2px solid white;
+    color: white;
+}
+
+@media only screen and (max-width: 1440px) {
+    .outerbox {
+        flex-direction: column; /* Change to column layout */
+        width: 55%; /* Take full width */
+        padding: 10px; 
+        margin-left: 10%;/* Adjust padding as needed */
+    }
+
+    .box1{
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .box3{
+        border-radius: 0px 0px 8px 8px;
+    }
+
+}
